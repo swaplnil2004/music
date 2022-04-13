@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWAp.MUSIC</title>
+    <script>
+        function onlyPlayOneIn(container) {
+            container.addEventListener("play", function(event) {
+                audio_elements = container.getElementsByTagName("audio")
+                for (i = 0; i < audio_elements.length; i++) {
+                    audio_element = audio_elements[i];
+                    if (audio_element !== event.target) {
+                        audio_element.pause();
+                    }
+                }
+            }, true);
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            onlyPlayOneIn(document.body);
+        });
+
+        function AutoPlay(container) {
+
+        }
+    </script>
+    <!--Don't copy This code it is copyrited -->
+    <Style>
+        body {
+            background-image: url(https://lh5.googleusercontent.com/5z8CzFMEJN2dLrgJwlKrmx7tUBd97HQjGkPuU2xPcGUrwx8WJOoyH8kwMgC9SHfxtccL3_WIFegVbFOtdEC-ybiaIpr4mKqx1vcP9FIAEIkK6SXTuwvAEEgdVqYyTU_Aww=w1280);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        #welcome {
+            padding: 15px;
+            border-color: rgb(161, 110, 44);
+            border-width: 2px;
+            border-style: solid;
+            height: 30px;
+            background-image: url(https://lh5.googleusercontent.com/g0CKJsmJNB0VkN97f-3Cox6NzzVoNEzRZZNeG2fOJbWoxP40PX5t845HoZx0apeU5AMwPrLkO-v436-nf4qUYYovGbsdar7JhNxz5Ie1xTETCWQA6RGSPJyhszN3rQG8fQ=w1280);
+        }
+        
+        nav ul {
+            display: flex;
+            list-style-type: none;
+            background-image: url(https://lh6.googleusercontent.com/-ZyYiJS7Wy-7bOrwL1VvOJg8VCwo9Hjj9pnSewQ14gnm6SrEij6qnLm95jmutOM2pNpAaHGEwpL2L1PWAqUClROWtt0F4LxvjTGcrjHGcQznPtybjkXmAvOKAdv11mYS3g=w1280);
+        }
+        
+        .logoPic img {
+            width: 30px;
+            height: 30px;
+        }
+        
+        nav ul li {
+            padding: 0 12px;
+        }
+        
+        .bottom {
+            position: sticky;
+            height: 110px;
+            background-image: url("image from new logos ");
+            bottom: 0;
+            color: blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: darkgrey;
+            border-radius: 15px;
+            padding-top: 10px;
+        }
+        
+        #myProgessBar {
+            width: 80vw;
+            text-align: center;
+            align-items: center;
+        }
+        
+        .icons {
+            margin-top: 12px;
+            height: 40px;
+            width: 30px;
+            animation-fill-mode: forwards;
+        }
+        
+        #songImage1 {
+            height: 70px;
+            width: 70px;
+        }
+        
+        .songItom {
+            background-image: url(fromLogoPic);
+            background-color: azure;
+            color: black;
+            align-items: center;
+            width: 70%;
+            border-radius: 15px;
+            padding: 10px;
+        }
+        
+        .container {
+            border-top: 1px solid rgb(136, 54, 54);
+            width: min-content;
+            min-height: 75vh;
+            background-color: black;
+            color: aliceblue;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            display: flex;
+            margin: 23px auto;
+            width: 90%;
+            border-radius: 24px;
+            position: sticky left;
+            padding: 12px;
+            background-image: url(https://lh6.googleusercontent.com/-ZyYiJS7Wy-7bOrwL1VvOJg8VCwo9Hjj9pnSewQ14gnm6SrEij6qnLm95jmutOM2pNpAaHGEwpL2L1PWAqUClROWtt0F4LxvjTGcrjHGcQznPtybjkXmAvOKAdv11mYS3g=w1280);
+        }
+    </Style>
+</head>
+
+<body>
+    <!--this is navigation bar-->
+    <nav>
+        <ul>
+
+            <li class="logoPic"><img src="https://lh5.googleusercontent.com/tRj9suBt8AQO6tIRMA1KGx_DAQoOycxxwdGpHm9ezz8g4-b38OlFBS2ImDqRx2KkUT4APBcQH3MbeqbNO_iRZM6eZ60Lk1clN2RU8_QFVtkyat55Tnb-w2SVKoADqkzykQ=w1280" alt="SWAp.MUSIC"></li>
+            <li>SWAp.MUSIC </li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+    <!--this is the song continer-->
+    <div class="container"><span><div class="songList">
+
+        <h1>New songs</h1>
+        <!--Vastey song-->
+        <div class="songItom">
+            <img src="J:\My Drive\websites\saki saki song background pic.png" alt="2." id="songImage1">
+
+            <span>Vastey (128k)</span><span>05:20</span>
+        <audio controls>
+                    <source src="https://docs.google.com/uc?export=download&id=17Gb44Z2WmIkPaeACs7yiHZvLHnyvhneM"
+                        type="audio/mp3">
+                </audio>
+
+        <span class="songListPlay">
+        </div>
+        <br>
+        <!--song-->
+        <div class="songItom">
+
+            <img src="song pic" alt="2." id="songImage1">
+            <span>song (128k)</span>
+        <span class="songListPlay"><span>05:20</span>
+    </div><br>
+    <div class="songItom">
+        <!--philhall-->
+        <img src="philhall pic" alt="2." id="songImage1">
+        <span>philhall (128k)</span>
+        <span class="songListPlay"><span>05:20</span>
+        <span><svg class="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                            <path
+                                d="M512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM176 168V344C176 352.7 180.7 360.7 188.3 364.9C195.8 369.2 205.1 369 212.5 364.5L356.5 276.5C363.6 272.1 368 264.4 368 256C368 247.6 363.6 239.9 356.5 235.5L212.5 147.5C205.1 142.1 195.8 142.8 188.3 147.1C180.7 151.3 176 159.3 176 168V168z" />
+                        </svg></span>
+        <span><svg class="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                            <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                            <path
+                                d="M361 215C375.3 223.8 384 239.3 384 256C384 272.7 375.3 288.2 361 296.1L73.03 472.1C58.21 482 39.66 482.4 24.52 473.9C9.377 465.4 0 449.4 0 432V80C0 62.64 9.377 46.63 24.52 38.13C39.66 29.64 58.21 29.99 73.03 39.04L361 215z" />
+                        </svg></span>
+    </div><br>
+    <div class="songItom">
+        <!--philhall-->
+        <img src="philhall pic" alt="2." id="songImage1">
+        <span>philhall (128k)</span>
+        <span class="songListPlay"><span>05:20</span>
+        <span><svg class="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                            <path
+                                d="M512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM176 168V344C176 352.7 180.7 360.7 188.3 364.9C195.8 369.2 205.1 369 212.5 364.5L356.5 276.5C363.6 272.1 368 264.4 368 256C368 247.6 363.6 239.9 356.5 235.5L212.5 147.5C205.1 142.1 195.8 142.8 188.3 147.1C180.7 151.3 176 159.3 176 168V168z" />
+                        </svg></span>
+        <span><svg class="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                            <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                            <path
+                                d="M361 215C375.3 223.8 384 239.3 384 256C384 272.7 375.3 288.2 361 296.1L73.03 472.1C58.21 482 39.66 482.4 24.52 473.9C9.377 465.4 0 449.4 0 432V80C0 62.64 9.377 46.63 24.52 38.13C39.66 29.64 58.21 29.99 73.03 39.04L361 215z" />
+                        </svg></span>
+    </div><br>
+    <div class="songItom">
+        <!--philhall-->
+        <img src="philhall pic" alt="2." id="songImage1">
+        <span>philhall (128k)</span>
+        <span class="songListPlay"><span>05:20</span>
+        <span><svg class="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                            <path
+                                d="M512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM176 168V344C176 352.7 180.7 360.7 188.3 364.9C195.8 369.2 205.1 369 212.5 364.5L356.5 276.5C363.6 272.1 368 264.4 368 256C368 247.6 363.6 239.9 356.5 235.5L212.5 147.5C205.1 142.1 195.8 142.8 188.3 147.1C180.7 151.3 176 159.3 176 168V168z" />
+                        </svg></span>
+        <span><svg class="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                            <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                            <path
+                                d="M361 215C375.3 223.8 384 239.3 384 256C384 272.7 375.3 288.2 361 296.1L73.03 472.1C58.21 482 39.66 482.4 24.52 473.9C9.377 465.4 0 449.4 0 432V80C0 62.64 9.377 46.63 24.52 38.13C39.66 29.64 58.21 29.99 73.03 39.04L361 215z" />
+                        </svg></span>
+    </div><br>
+    <div class="songItom">
+        <!--philhall-->
+        <img src="philhall pic" alt="2." id="songImage1">
+        <span>philhall (128k)</span>
+        <span class="songListPlay"><span>05:20</span>
+        <span><svg class="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                            <path
+                                d="M512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM176 168V344C176 352.7 180.7 360.7 188.3 364.9C195.8 369.2 205.1 369 212.5 364.5L356.5 276.5C363.6 272.1 368 264.4 368 256C368 247.6 363.6 239.9 356.5 235.5L212.5 147.5C205.1 142.1 195.8 142.8 188.3 147.1C180.7 151.3 176 159.3 176 168V168z" />
+                        </svg></span>
+        <span><svg class="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                            <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                            <path
+                                d="M361 215C375.3 223.8 384 239.3 384 256C384 272.7 375.3 288.2 361 296.1L73.03 472.1C58.21 482 39.66 482.4 24.52 473.9C9.377 465.4 0 449.4 0 432V80C0 62.64 9.377 46.63 24.52 38.13C39.66 29.64 58.21 29.99 73.03 39.04L361 215z" />
+                        </svg></span>
+    </div>
+    </span>
+    <span><img src="J:\My Drive\websites\saki saki song background pic.png" alt=""></span>
+
+    </div>
+    </span>
+
+    <div class="songBanner"></div>
+    </div>
+
+    <!--this is the song 2 container-->
+    <div class="container">
+        <div class="songList">
+            <img src="" alt="1." class="songImagi">
+        </div>
+
+    </div>
+
+
+    <!--this is welcome statement-->
+    <p id="welcome"> <span> </span> WELCOME TO SWAp.MUSIC.... powerd by -
+        <a id="swap.ing" target=" blank" href="https://sites.google.com/view/swap-ing/home?authuser=0">SWAp.ing</a>
+    </p>
+    <br><br><br><br><br><br>
+    <!--this is swap.ing logo pic and website link -->
+    <footer> <img src="" alt="SWAp.ing">
+        <span>
+            <a target=" blank" href="https://sites.google.com/view/swap-ing/home?authuser=0">SWAp.ing
+            </a></span>
+    </footer>
+    <!--this is seekbar playing audio -->
+    <div class="bottom">
+        <input type="range" name="range" id="myProgessBar" min="0" max="100">
+        <div class="icons">
+            <!--font awsom icons-->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path
+                    d="M512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM176 168V344C176 352.7 180.7 360.7 188.3 364.9C195.8 369.2 205.1 369 212.5 364.5L356.5 276.5C363.6 272.1 368 264.4 368 256C368 247.6 363.6 239.9 356.5 235.5L212.5 147.5C205.1 142.1 195.8 142.8 188.3 147.1C180.7 151.3 176 159.3 176 168V168z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path
+                    d="M52.51 440.6l171.5-142.9V214.3L52.51 71.41C31.88 54.28 0 68.66 0 96.03v319.9C0 443.3 31.88 457.7 52.51 440.6zM308.5 440.6l192-159.1c15.25-12.87 15.25-36.37 0-49.24l-192-159.1c-20.63-17.12-52.51-2.749-52.51 24.62v319.9C256 443.3 287.9 457.7 308.5 440.6z" />
+            </svg>
+        </div>
+    </div>
+
+
+</body>
+
+
+</html>
